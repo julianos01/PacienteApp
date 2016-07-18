@@ -1,0 +1,21 @@
+﻿
+<br />
+
+<div style="background-color: lightblue;width:100%">
+
+    <center><button class="btn btn-primary" ui-sref="PacientesNew">Nuevo</button></center>
+    {{Mensajes}}
+</div>
+
+
+<table align="center" class="table table-responsive table-bordered">
+  
+    
+    <tr ng-repeat="item in listPacientes| filter :valueFilter ">
+         <td>{{item.Identificacion }}</td>
+         <td>{{item.Nombres }}</td>
+        <td>{{ item.Apellidos }}</td>
+        <td>{{item.Direccion }}</td>
+        <td><button ng-click="Eliminar(item.Identificacion)" class="btn btn-xs btn-warning">Eliminar</button></td>
+    </tr>
+</table>

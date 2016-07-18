@@ -1,0 +1,19 @@
+﻿<div class="rowcol-md-12">
+    <div class="form-group">
+        <b>Nombre</b>
+        <input type="text" class="form-control" ng-model="objProducto.nombre" />
+        <b>Codigo</b>
+        <input type="number" class="form-control" ng-model="objProducto.codigo" />
+        <button ng-click="guardarProducto()" class="btn btn-primary btn-block">Guardar</button>
+
+    </div>
+    <input name="Filtrar" type="text" class="form-control" ng-model="valueFilter" />
+    <table class="table table-responsive table-bordered">
+        <tr ng-repeat="item in listProducto | filter :valueFilter">
+            <td>{{item.nombre}}</td>
+            <td>{{item.codigo}}</td>
+        </tr>
+        </table>
+        </div>
+
+

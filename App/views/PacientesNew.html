@@ -1,0 +1,28 @@
+﻿<div style="background-color:lightyellow">
+
+    <center><h1>Nuevo Paciente</h1></center>
+
+
+</div>
+
+<div class="form-group-sm">
+    Identificacion
+    <input class="form-control"  type ="text" name="Identificacion" 
+           ng-model="objPaciente.Identificacion" ></input>
+    Nombres
+    <input class="form-control" type="text" name="Nombres"
+           ng-model="objPaciente.Nombres"></input>
+    Apellidos
+    <input class="form-control" type="text" name="Apellidos"
+           ng-model="objPaciente.Apellidos"></input>
+
+    <br />
+    <br />
+</div>
+<div class="form-horizontal">
+    <center>
+        <button ng-click="guardarpaciente()" class="btn btn-primary">Guardar</button>
+        <button class="btn btn-primary" ui-sref="PacienteView">Cancelar</button>
+    </center>
+    
+</div>

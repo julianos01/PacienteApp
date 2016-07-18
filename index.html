@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html ng-app="appTest">
+<head>
+    <meta charset="utf-8" />
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <title>PruebaPracticaMobile</title>
+
+    <!-- PruebaPracticaMobile references -->
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="scripts/References/jquery-2.2.4.min.js"></script>
+    <link href="css/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="scripts/References/bootstrap.min.js"></script>
+
+</head>
+<body class="global">
+    <div>
+        <br />
+        <h1 style="color:red">My first App cordoba</h1>
+        <nav>
+            <div>
+                <button class="btn btn-primary" ui-sref="Clase1">Clase 1</button>
+                <button class="btn btn-primary" ui-sref="PacienteView">Pacientes</button>
+
+            </div>
+        </nav>
+        <div id="divContenido">
+            <div ui-view>
+            </div>
+        </div>
+        <footer style="z-index :1000 !important">
+            <div style="background:red;width:100%">
+                <center>    <p style="color:white">Copyright Julian</p></center>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/References/angular.min.js"></script>
+  
+    <script src="scripts/References/angular-ui-router.min.js"></script>
+    <script src="scripts/References/angular-resource.min.js"></script>
+    <script src="App/app.js"></script>
+    <script src="App/controllers/Clase1.js"></script>
+    <script src="App/controllers/PacienteControllert.js"></script>
+    <script src="App/services/Pacienteservice.js"></script>
+</body>
+</html>
